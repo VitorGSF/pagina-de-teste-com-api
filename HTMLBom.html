@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina pedida pelo LADS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipo" value="movies">
+                <label class="form-check-label">
+                    Filme
+                </label>
+            </div>
+                
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tipo" value="lyrics">
+                <label class="form-check-label">
+                    Letra
+                </label>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="text" class="form-control" id="nome" placeholder="Nome de filme ou letra de música">
+            </div>
+            <button onclick="pesquisa();" class="btn btn-success">Buscar</button>
+        </div>
+
+        <p class="mb-0 mt-3" style="font-weight: bold" id="titulo"></p>
+        <p class="mb-0 mt-2" id="letra"></p>
+        <img class="mt-2" id="poster">
+    </div>
+    <script src="js/aplicacao.js"></script>
+</body>
+</html>
